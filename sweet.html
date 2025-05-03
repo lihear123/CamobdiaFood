@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet</title>
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sweet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Moul&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bokor&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap" rel="stylesheet">
+</head>
+<style>
+    .product {
+        background-color: unset; /* Unset the background color */
+    }
+    .product h3{
+        font-family: 'Fasthand', cursive;
+        font-size: 20px;
+        margin-top: 10px;
+        color: white;
+    }
+    .product p{
+        font-family: 'Fasthand', cursive;
+        font-size: 20px;
+        margin-top: 10px;
+        color: white;
+    }
+    .buy,.closer,.cost,.sweetname,.qua,.check{
+        font-family: 'Fasthand', cursive;
+        font-size: 15px;    
+    }
+
+</style>
+<body>
+    <div class="side">
+            <button class="close"><img src="img/close.png" alt="" width="20px"></button>
+            <ul class="nav">
+                <li><a href="index.html">ទំព័រដើម</a></li>
+                <input style="display: none;" type="checkbox" id="toggle1">
+                <label for="toggle1">
+                    <li class="after2_open"><a href="#">រសៀល<i class="bi bi-chevron-right chevron"></i></a>
+                        <ul class="afternoon">
+                            <li><a href="sweet.html">បង្អែម</a></li>
+                            <li><a href="order.html">ម្ហូបកម្មង់</a></li>
+                        </ul>
+                    </li>
+                </label>
+                <input style="display: none;" type="checkbox" id="toggle2">
+                <label for="toggle2">
+                    <li class="evening2"><a href="#">ល្ងាច<i class="bi bi-chevron-right chevron"></i>
+                        <ul class="even_ning">
+                            <li><a href="sea.html">គ្រឿងសមុទ្រ</a></li>
+                            <li><a href="others.html">គ្រឿងម្ជូរ</a></li>
+                        </ul>
+                    </a></li>
+                </label>
+                <li><a href="aboutus.html">អំពីយើង</a></li>
+            </ul>
+        </div>
+    <div class="container">
+        <div class="navshow">
+            <ul class="navbarshow">
+                <li class="hambur"><a  href="#"><img src="img/menu.png" class="img" alt="" width="30px"></a></li>
+                <li class="home"><a href="index.html">ទំព័រដើម</a></li>
+                <li class="drop1" style="position: relative;">
+                    <a href="#" class="dropdown">ពេលរសៀល <i class="bi bi-chevron-right chevron"></i></a>
+                    <ul class="brand">
+                        <li class="space"><a href="sweet.html">បង្អែម</a></li>
+                        <li><a href="others.html">អាហារកម្មង់</a></li>
+                    </ul>
+                </li>
+                <li class="evenning"><a href="#">ពេលល្ងាច <i class="bi bi-chevron-right chevron"></i></a>
+                    <ul class="drop2">
+                        <li class="space"><a href="sea.html">គ្រឿងសមុទ្រ</a></li>
+                        <li><a href="others.html">ផ្សេងៗ</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="search">
+                <input class="text" type="text" placeholder=" ស្វែងរក">
+                <img class="search1" src="img/search.png" alt="" width="20px">
+            </div>
+            <div class="logo">
+                <img src="img/logo2.png" class="logo1" alt="" width="50px">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Header section -->
+    <header>
+        <h1></h1>
+    </header>
+    <div class="container1" style="margin-top: -50px;">
+        <h1>បង្អែម</h1>
+    </div>
+
+    <!-- Main content section -->
+    <!-- <main style="width: 1000px; height: auto; margin-top: 0px;">  -->
+        <!-- Product grid container -->
+        <div class="product-grid">
+            <!-- Individual product cards -->
+            <div class="product">
+                <img src="img/sweet/សណ្ដែក.png" alt="Product 1" style="width: 150px; height: 150px;" />
+                <h3>សណ្ដែកខៀវ</h3>
+                <p>១០០០ ៛</p>
+                <!-- Button to show product details in modal -->
+                <button class="check" onclick="showProductDetails('សណ្ដែកខៀវ', 1000, 'img/sweet/សណ្ដែក.png')">
+                    ពិនិត្យមើល
+                </button>
+            </div>
+            <!-- Repeat similar blocks for other products -->
+            <div class="product">
+                <img src="img/sweet/ត្នោត.png" alt="Product 2" style="width: 150px; height: 150px;" />
+                <h3>នំត្នោត</h3>
+                <p>១០០០ ៛</p>
+                <button  class="check" onclick="showProductDetails('នំត្នោត', 1000, 'img/sweet/ត្នោត.png')">
+                    ពិនិត្យមើល
+                </button>
+            </div>
+            <div class="product">
+                <img src="img/sweet/បាញ់ចានឿក.png" alt="Product 2" style="width: 150px; height: 150px;" />
+                <h3>បាញ់ចានឿក</h3>
+                <p>១០០០ ៛</p>
+                <button class="check" onclick="showProductDetails('បាញ់ចានឿក', 1000, 'img/sweet/បាញ់ចានឿក.png')">
+                    ពិនិត្យមើល
+                </button>
+            </div>
+            <div class="product">
+                <img src="img/sweet/នំបញ្ចុក.png" alt="Product 2" style="width: 150px; height: 150px;" />
+                <h3>នំបញ្ចុក</h3>
+                <p>១០០០ ៛</p>
+                <button class="check" onclick="showProductDetails('នំបញ្ចុក', 1000, 'img/sweet/នំបញ្ចុក.png')">
+                    ពិនិត្យមើល
+                </button>
+            </div>
+            <div class="product">
+                <img src="img/sweet/តាប៉ែ.png" alt="Product 2" style="width: 150px; height: 150px;" />
+                <h3>តាប៉ែខ្មៅ</h3>
+                <p>១០០០ ៛</p>
+                <button class="check" onclick="showProductDetails('តាប៉ែខ្មៅ', 1000, 'img/sweet/តាប៉ែ.png')">
+                    ពិនិត្យមើល
+                </button>
+            </div>
+            <div class="product">
+                <img src="img/sweet/ទ្រៀបបាយ.png" alt="Product 2" style="width: 150px; height: 150px;" />
+                <h3>ទ្រៀបបាយ</h3>
+                <p>១០០០ ៛</p>
+                <button class="check" onclick="showProductDetails('ទ្រៀបបាយ', 1000, 'img/sweet/ទ្រៀបបាយ.png')">
+                    ពិនិត្យមើល
+                </button>
+            </div>
+            <!-- Additional products... -->
+        </div>
+    <!-- </main> -->
+
+    <!-- Modal for product details -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <!-- Modal title -->
+            <h2 id="modalTitle" class="sweetname"></h2>
+            <!-- Modal product image -->
+            <img id="modalImage" src="" alt="Product Image"/>
+            <!-- Modal product price -->
+            <p class="cost">១ចានត្រឹមតែ​​ <span id="modalPrice"></span> ៛</p>
+            <!-- Quantity input -->
+            <label class="qua" for="quantity">ចំនួន:</label>
+
+
+
+            <div class="quantity-controls">
+                <button class="quantity-btn" onclick="changeQuantity(-1)">-</button>
+                <input id="quantity" type="number" value="1" min="1" onchange="updateTotalPrice()" />
+                <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
+            </div>
+            <!-- Total price display -->
+            <p class="cost">តម្លៃត្រឹមតែ: <span id="totalPrice"></span> ៛</p>
+            <!-- Buy button -->
+            <button class="buy" onclick="buyProduct()">ទិញ</button>
+            <!-- Close button -->
+            <button class="closer" onclick="closeModal()">បិទ</button>
+        </div>
+    </div>
+
+    <div class="line">
+    </div>
+    <div class="address">
+        <p>អាស័យដ្ឋាន <span>ភូមិក្ដុយ ឃុំស្ដើងជ័យ ស្រុក ជើងព្រៃ ខេត្ត កំពង់ចាម <br><span>ទំនាក់ទំនង៖ 01080473/095439221 <br>Email : vcddisk168@gmail.com & lihour9@gmail.com</span></span></p> <br>
+    </div>
+</div>
+
+
+    <script src="js/style.js"></script>
+    <script src="js/sweet.js"></script>
+</body>
+</html>
