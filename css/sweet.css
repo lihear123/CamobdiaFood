@@ -1,0 +1,166 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Grid layout for displaying products */
+.product-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, auto);
+    padding: 1rem;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 700px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+}
+
+
+
+/* Individual product card styling */
+.product {
+    border-radius: 8px;
+    /* padding: 10px; */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Product image styling */
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* Product title styling */
+.product h3 {
+    margin: 0.5rem 0;
+}
+
+/* Product price styling */
+.product p {
+    color: #555;
+}
+
+/* Button styling for product details */
+.product button {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+.product button:hover {
+    background-color: #218838;
+}
+
+/* Modal container styling (hidden by default) */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal content box styling */
+.modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Modal image styling */
+.modal-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* Input field styling for quantity */
+.modal-content input {
+    width: 50px;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+/* Close button styling */
+.closer {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Close button hover effect */
+.close:hover {
+    background-color: #c82333;
+}
+.buy{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.buy:hover {
+    background-color: #0056b3;
+}
+.quantity-controls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        .quantity-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .quantity-btn:hover {
+            background-color: #0056b3;
+        }
+
+        #quantity {
+            width: 50px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 0.5rem;
+        }
